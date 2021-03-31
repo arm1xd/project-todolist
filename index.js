@@ -51,10 +51,13 @@ res.addEventListener('click' , (Event)=>{
             } else {
                 let block =document.createElement('div')
                 block.classList.add('item');
-           
+                
                 block.innerHTML = `<p>${jopa}</p>`
+
+                let result = document.querySelector('.res');
+                result.append(block);
            
-                return block;
+                
             }
 
 })
